@@ -1,0 +1,21 @@
+uuid: fbf072fd-b057-4897-b3bb-5b7907865c7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block
+    - field.storage.block_content.field_contact_number
+  module:
+    - telephone
+id: block_content.footer_block.field_contact_number
+field_name: field_contact_number
+entity_type: block_content
+bundle: footer_block
+label: 'Contact Number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

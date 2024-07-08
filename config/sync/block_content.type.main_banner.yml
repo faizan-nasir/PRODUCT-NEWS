@@ -1,0 +1,8 @@
+uuid: 29677588-61d4-4b35-8e98-f63fd493d4c7
+langcode: en
+status: true
+dependencies: {  }
+id: main_banner
+label: 'Main Banner'
+revision: false
+description: null

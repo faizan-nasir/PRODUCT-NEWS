@@ -1,0 +1,69 @@
+uuid: 89ea7ea3-1718-41f7-8260-e0190af131fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news.field_body
+    - field.field.node.news.field_news_image
+    - field.field.node.news.field_product_category
+    - image.style.thumbnail
+    - node.type.news
+  module:
+    - image
+    - smart_trim
+    - user
+id: node.news.teaser
+targetEntityType: node
+bundle: news
+mode: teaser
+content:
+  field_body:
+    type: smart_trim
+    label: above
+    settings:
+      trim_length: 50
+      trim_type: words
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more:
+        display_link: true
+        target_blank: false
+        link_trim_only: false
+        class: more-link
+        text: 'View More'
+        aria_label: 'Read more about [node:title]'
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+        replace_tokens: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_news_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_product_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
