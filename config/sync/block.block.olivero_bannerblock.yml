@@ -1,0 +1,30 @@
+uuid: 95e93076-ee88-4096-98ea-1a6e987298f4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:main_banner:8d5ef14e-4db4-4a0b-a59c-ff6d5a136d80'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: olivero_bannerblock
+theme: olivero
+region: hero
+weight: 0
+provider: null
+plugin: 'block_content:8d5ef14e-4db4-4a0b-a59c-ff6d5a136d80'
+settings:
+  id: 'block_content:8d5ef14e-4db4-4a0b-a59c-ff6d5a136d80'
+  label: 'Banner Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/product/*"

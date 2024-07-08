@@ -1,0 +1,8 @@
+uuid: 7d0bde0f-e8f6-42d6-ab6d-33a28bcc1331
+langcode: en
+status: true
+dependencies: {  }
+id: hero-menu
+label: 'Hero Menu'
+description: ''
+locked: false

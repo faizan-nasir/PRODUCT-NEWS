@@ -1,0 +1,31 @@
+uuid: 0aa01614-7a1f-4148-9baa-abf2c658f1de
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block
+    - field.field.block_content.footer_block.field_contact_email
+    - field.field.block_content.footer_block.field_contact_number
+  module:
+    - telephone
+id: block_content.footer_block.default
+targetEntityType: block_content
+bundle: footer_block
+mode: default
+content:
+  field_contact_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_contact_number:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

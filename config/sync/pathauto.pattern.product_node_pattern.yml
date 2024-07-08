@@ -1,0 +1,23 @@
+uuid: ff77ef28-9842-4c79-98d4-53b18d0593f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: product_node_pattern
+label: 'Product Node Pattern'
+type: 'canonical_entities:node'
+pattern: '/[node:content-type]/[node:title]'
+selection_criteria:
+  f2bf29f0-7a9d-4fdb-8512-ed368aa28c45:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: f2bf29f0-7a9d-4fdb-8512-ed368aa28c45
+    context_mapping:
+      node: node
+    bundles:
+      news: news
+      product: product
+selection_logic: and
+weight: -5
+relationships: {  }

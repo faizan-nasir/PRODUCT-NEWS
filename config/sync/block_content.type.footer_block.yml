@@ -1,0 +1,8 @@
+uuid: 349b320b-e897-4209-89a3-be79604ba048
+langcode: en
+status: true
+dependencies: {  }
+id: footer_block
+label: 'Footer Block'
+revision: false
+description: null

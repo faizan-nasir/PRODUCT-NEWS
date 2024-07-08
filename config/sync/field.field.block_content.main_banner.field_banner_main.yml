@@ -1,0 +1,31 @@
+uuid: d8c6d958-21e0-4471-ba7a-2a73a03c9877
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.main_banner
+    - field.storage.block_content.field_banner_main
+    - paragraphs.paragraphs_type.banner
+  module:
+    - entity_reference_revisions
+id: block_content.main_banner.field_banner_main
+field_name: field_banner_main
+entity_type: block_content
+bundle: main_banner
+label: 'Banner main'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      banner: banner
+    negate: 0
+    target_bundles_drag_drop:
+      banner:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions
